@@ -1,4 +1,4 @@
-### Use `index.html` annd do the following:
+### Use `index.html` and do the following:
 
 1. Add a script tag to the bottom.
 2. Change the body style so it has a font-family of "Arial, sans-serif".
