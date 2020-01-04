@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Learning About Nodes</title>
+	<head>
+		<title>Learning About Nodes</title>
 
-    <style>
-      * {
-        border: 2px solid #dedede;
-        padding: 15px;
-        margin: 15px;
-      }
-      html {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        max-width: 600px;
-        font-family: sans-serif;
-        color: #333;
-      }
-    </style>
-  </head>
+		<style>
+			* {
+				border: 2px solid #dedede;
+				padding: 15px;
+				margin: 15px;
+			}
+			html {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				max-width: 600px;
+				font-family: sans-serif;
+				color: #333;
+			}
+		</style>
+	</head>
 
-  <body>
-    <h1>Shark World</h1>
-    <p>
-      The world's leading source on <strong>shark</strong> related information.
-    </p>
-    <h2>Types of Sharks</h2>
-    <ul>
-      <li>Hammerhead</li>
-      <li>Tiger</li>
-      <li>Great White</li>
-    </ul>
-  </body>
+	<body>
+		<h1>Shark World</h1>
+		<p>
+			The world's leading source on <strong>shark</strong> related
+			information.
+		</p>
+		<h2>Types of Sharks</h2>
+		<ul>
+			<li>Hammerhead</li>
+			<li>Tiger</li>
+			<li>Great White</li>
+		</ul>
+	</body>
 
-  <script>
-    const h1 = document.getElementsByTagName("h1")[0];
-    const p = document.getElementsByTagName("p")[0];
-    const ul = document.getElementsByTagName("ul")[0];
-    // Your code goes here
-  </script>
+	<script>
+		const h1 = document.getElementsByTagName("h1")[0];
+		const p = document.getElementsByTagName("p")[0];
+		const ul = document.getElementsByTagName("ul")[0];
+		// Your code goes here
+
+		ul.firstElementChild.style.backgroundColor = "#27D2C2";
+
+		all_li = document.querySelectorAll("li");
+		all_li.forEach(i => {
+			i.style.backgroundColor = "#17B2D5";
+		});
+		all_li[all_li.length - 1].style.backgroundColor = "#EE10B7";
+		all_li[Math.floor(all_li.length / 2)].style.backgroundColor = "#3D9F31";
+        all_li[Math.floor(all_li.length / 2)].previousElementSibling.style.backgroundColor = "aquamarine";
+        all_li[Math.floor(all_li.length / 2)].nextElementSibling.style.backgroundColor = "coral";
+     
+	</script>
 </html>

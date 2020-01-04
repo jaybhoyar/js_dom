@@ -23,7 +23,7 @@ The children of a node are the nodes that are one level below it. Any nodes beyo
 
 ![Child Nodes](./assets/childnodes.png)
 
-
+ 
 ## Todo Tasks
 
 1. Use firstElementChild, and change the background color of the first `li` in the `ul`.
