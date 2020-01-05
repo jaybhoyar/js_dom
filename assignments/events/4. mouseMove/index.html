@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<style>
+            body {
+                font-family: 'Courier New', Courier, monospace;
+                margin: 20px 30px;
+                border: 5px solid rgb(119, 116, 116);
+                height: 95vh;
+            }
+			h1 {
+				text-align: left;
+                padding: 25px;
+                font-weight: 400;
+				font-size: 40px;
+            }
+            ul {
+                list-style: none;
+            }
+			.position {
+                padding: 10px;
+                font-size: 34px;
+                font-weight: 600;
+                
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Move Mouse Cursor</h1>
+		<ul>
+			<li class="position" id="screenX"></li>
+			<li class="position" id="screenY"></li>
+			<li class="position" id="clientX"></li>
+			<li class="position" id="clientY"></li>
+		</ul>
+
+		<script>
+			document.body.addEventListener("mousemove", function(event) {
+				let x = event.screenX;
+				let y = event.screenY;
+				let cx = event.clientX;
+				let cy = event.clientY;
+
+				document.querySelector("#screenX").innerText = x;
+				document.querySelector("#screenY").innerText = y;
+				document.querySelector("#clientX").innerText = cx;
+				document.querySelector("#clientY").innerText = cy;
+			});
+		</script>
+	</body>
+</html>
