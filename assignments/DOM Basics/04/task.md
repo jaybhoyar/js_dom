@@ -6,7 +6,7 @@
 4. Iterate through each li and change the class to "listitem". Add a style tag that sets a rule for "listitem" to make the color red.
 5. Create a new img element and set its src attribute to a picture of you. Append that element to the page.
 
-
+ 
 ### Updating the google style
 
 1. Open up [Google](https://google.com) in your browser and open up the console.
