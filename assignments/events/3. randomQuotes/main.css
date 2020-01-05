@@ -1,0 +1,26 @@
+/* CSS */
+body {
+	font-family: "Cochin", serif;
+    background: url('https://images.pexels.com/photos/1544880/pexels-photo-1544880.jpeg?cs=srgb&dl=photography-of-body-of-water-and-mountains-1544880.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    background-size: cover;
+    height: 90vh;
+   
+}
+h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 45px;
+    color: rgb(26, 26, 26);
+	text-shadow: -1px 0px 5px rgb(255, 255, 255);
+
+}
+.quote {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+	text-shadow: -1px 0px 5px rgba(0, 0, 0, 0.46);
+}
