@@ -43,14 +43,17 @@
 
 		ul.firstElementChild.style.backgroundColor = "#27D2C2";
 
-		all_li = document.querySelectorAll("li");
-		all_li.forEach(i => {
+		allLi = document.querySelectorAll("li");
+		allLi.forEach(i => {
 			i.style.backgroundColor = "#17B2D5";
 		});
-		all_li[all_li.length - 1].style.backgroundColor = "#EE10B7";
-		all_li[Math.floor(all_li.length / 2)].style.backgroundColor = "#3D9F31";
-        all_li[Math.floor(all_li.length / 2)].previousElementSibling.style.backgroundColor = "aquamarine";
-        all_li[Math.floor(all_li.length / 2)].nextElementSibling.style.backgroundColor = "coral";
-     
+		allLi[allLi.length - 1].style.backgroundColor = "#EE10B7";
+		allLi[Math.floor(allLi.length / 2)].style.backgroundColor = "#3D9F31";
+		allLi[
+			Math.floor(allLi.length / 2)
+		].previousElementSibling.style.backgroundColor = "aquamarine";
+		allLi[
+			Math.floor(allLi.length / 2)
+		].nextElementSibling.style.backgroundColor = "coral";
 	</script>
 </html>

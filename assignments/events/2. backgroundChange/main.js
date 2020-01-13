@@ -9,8 +9,8 @@ function randomColor() {
 	return color;
 }
 
-document.querySelector("button").addEventListener("click", changeColor);
-
 function changeColor() {
 	document.body.style.backgroundColor = randomColor();
 }
+
+document.querySelector("button").addEventListener("click", changeColor);

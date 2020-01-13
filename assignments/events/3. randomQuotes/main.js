@@ -1,14 +1,13 @@
 var quotes;
 
 // Write your code here
-document.addEventListener("keydown", randomQuoteGenerator);
 function randomQuoteGenerator(event) {
 	if (event.which == 32) {
 		let length = quotes.length;
 		let random = Math.floor(Math.random() * length);
 		document.querySelector(
 			".quote"
-		).innerHTML = `"${quotes[random].quoteText}" <br> ${ quotes[random].quoteAuthor}`;
+		).innerHTML = `"${quotes[random].quoteText}" <br> ${quotes[random].quoteAuthor}`;
 	}
 }
 
@@ -326,3 +325,4 @@ quotes = [
 		quoteText: "Great talent finds happiness in execution."
 	}
 ];
+document.addEventListener("keydown", randomQuoteGenerator);
